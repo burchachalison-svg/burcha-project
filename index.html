@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTATE - Real Estate Website</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">ESTATE</div>
+  
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#property">Property</a></li>
+        <li><a href="#faq">FAQ - Help</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  
+    <div class="auth-buttons">
+      <button id="loginBtn">Login</button>
+      <button id="registerBtn">Register</button>
+    </div>
+  </header>
+  
+
+  <!-- Search Bar -->
+  <section id="search">
+    <input type="text" placeholder="Search properties..." />
+    <button>Search</button>
+  </section>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Our Properties</h2>
+    <div class="home-gallery">
+      <div class="property-card">
+        <img src="static/images/home.jpg" alt="Swimming Pool">
+        <div class="overlay">Luxury Swimming Pool</div>
+      </div>
+      <div class="property-card">
+        <img src="static/images/gym.jpg" alt="Gym Area">
+        <div class="overlay">Modern Fitness Gym</div>
+      </div>
+      <div class="property-card">
+        <img src="static/images/pitch.jpg" alt="Playground">
+        <div class="overlay">Recreational Playground</div>
+      </div>
+      <div class="property-card">
+        <img src="static/images/resting.jpeg" alt="Resting Area">
+        <div class="overlay">Relaxation Lounge</div>
+      </div>
+      <div class="property-card">
+        <img src="static/images/bed rooms.jpg" alt="Rooms">
+        <div class="overlay">Spacious Living Rooms</div>
+      </div>
+      <div class="property-card">
+        <img src="static/images/kids.jpg" alt="Kids Area">
+        <div class="overlay">Kids Adventure Zone</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Our Estates</h2>
+    <div class="categories">
+      <div class="category">
+        <img src="static/images/home.jpg" alt="Homestead">
+        <h3>Homestead</h3>
+        <p>Includes parking, small farm, playground, security, gym, swimming pool, and kitchen.</p>
+      </div>
+      <div class="category">
+        <img src="static/images/single room.jpg" alt="Single">
+        <h3>Single Room</h3>
+        <p>Comes with clean water supply only — perfect for minimalists.</p>
+      </div>
+      <div class="category">
+        <img src="static/images/bed rooms.jpg" alt="Apartments">
+        <h3>Apartments</h3>
+        <p>Available in Bedsitter, 1BR, 2BR, and 3BR — all include hot shower, electricity, water, and security.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ - Help</h2>
+    <div class="faq-item">
+      <button class="faq-question">How can I book a property?</button>
+      <div class="faq-answer">
+        <p>Click “Contact” below and send us your preferred property ID or description.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Do you offer installment plans?</button>
+      <div class="faq-answer">
+        <p>Yes, flexible payment options are available depending on the property type.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>📧 Email: info@estate.com</p>
+        <p>📞 Phone: +254 745844809</p>
+        <p>📍 Location: Embu, Kenya</p>
+        <p>We’d love to hear from you! Whether you have a question, want to view a property, or just say hello — feel free to reach out.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Popup -->
+  <div id="popupMessage" class="popup-message">
+    <p>✅ Thank you! Your message has been sent successfully.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ESTATE | All rights reserved.</p>
+  </footer>
+
+  <!-- Login Form -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeLogin">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Register Form -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeRegister">&times;</span>
+      <h2>Register</h2>
+      <form>
+        <input type="text" placeholder="Username" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
